@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Portal | CampusTech Hackathon 2026</title>
+  <meta name="description" content="Register your team free for CampusTech Hackathon 2026. Step-by-step registration instructions, deadlines, team requirements, and submission portal.">
+  <meta name="keywords" content="CampusTech registration, register hackathon 2026, student hackathon apply, free college hackathon">
+  <meta name="author" content="Team Digital Dominators">
+  <link rel="canonical" href="https://1pratiksingh11.github.io/Campustech-2026/registration.html">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Academic Prototype Disclaimer -->
+  <div class="disclaimer-banner">
+    <div class="container">
+      ⚠️ <strong>Academic Prototype Notice:</strong> CampusTech 2026 is an educational student project created for academic demonstration (Bennett University - Team Digital Dominators). This is a mock prototype; no real registrations or commercial transactions are processed.
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand">
+        <span>⚡ CampusTech</span>
+        <span class="brand-badge">2026 Mock</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="overview.html" class="nav-link">Overview</a></li>
+          <li><a href="schedule.html" class="nav-link">Schedule</a></li>
+          <li><a href="eligibility.html" class="nav-link">Eligibility</a></li>
+          <li><a href="registration.html" class="nav-link active">Registration</a></li>
+          <li><a href="challenges.html" class="nav-link">Challenges</a></li>
+          <li><a href="venue.html" class="nav-link">Venue</a></li>
+          <li><a href="faq.html" class="nav-link">FAQs</a></li>
+          <li><a href="registration.html" class="btn-nav">Register Free</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+    <div class="container">
+      <ol class="breadcrumbs">
+        <li><a href="index.html">Home</a></li>
+        <li aria-current="page">Registration Portal</li>
+      </ol>
+    </div>
+  </nav>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://1pratiksingh11.github.io/Campustech-2026/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Registration Portal",
+          "item": "https://1pratiksingh11.github.io/Campustech-2026/registration.html"
+        }
+    ]
+  }
+  </script>
+
+
+  <main class="section">
+    <div class="container">
+      <div class="section-header">
+        <h1>Hackathon Registration Portal</h1>
+        <p>Secure your spot at CampusTech 2026. Completely free registration for all eligible college students.</p>
+      </div>
+
+      <div class="grid-3" style="margin-bottom: 3.5rem;">
+        <div class="card">
+          <div style="font-size: 1.5rem; font-weight: 800; color: var(--accent-secondary); margin-bottom: 0.5rem;">STEP 1</div>
+          <h2 class="card-title">Assemble Your Team</h2>
+          <p class="card-text">Form a team of 2 to 4 members. Select a unique team name and designate one member as the primary Team Leader.</p>
+        </div>
+
+        <div class="card">
+          <div style="font-size: 1.5rem; font-weight: 800; color: var(--accent-secondary); margin-bottom: 0.5rem;">STEP 2</div>
+          <h2 class="card-title">Pick Your Track</h2>
+          <p class="card-text">Choose your preferred challenge track: AI/ML, Web3, FinTech, HealthTech, or Open Innovation (you may adjust during Day 1).</p>
+        </div>
+
+        <div class="card">
+          <div style="font-size: 1.5rem; font-weight: 800; color: var(--accent-secondary); margin-bottom: 0.5rem;">STEP 3</div>
+          <h2 class="card-title">Receive Confirmation</h2>
+          <p class="card-text">After submitting the form, team leaders receive a confirmation email with physical check-in passes and Discord invites.</p>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem; text-align: center;">Team Registration Form</h2>
+        <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem; font-size: 0.9rem;">
+          Fill in your details below to simulate event registration.
+        </p>
+
+        <div id="form-alert" style="display: none; background: rgba(16, 185, 129, 0.15); border: 1px solid var(--success-color); color: #6ee7b7; padding: 1rem; border-radius: var(--radius-md); margin-bottom: 1.5rem; font-size: 0.92rem;">
+        </div>
+
+        <form id="demo-reg-form">
+          <div class="form-group">
+            <label for="team-name" class="form-label">Team Name *</label>
+            <input type="text" id="team-name" class="form-control" placeholder="e.g. CodeWarriors" required>
+          </div>
+
+          <div class="grid-2" style="gap: 1rem;">
+            <div class="form-group">
+              <label for="leader-name" class="form-label">Team Leader Full Name *</label>
+              <input type="text" id="leader-name" class="form-control" placeholder="e.g. Pratik Singh" required>
+            </div>
+            <div class="form-group">
+              <label for="leader-email" class="form-label">College Email Address *</label>
+              <input type="email" id="leader-email" class="form-control" placeholder="e.g. student@college.edu.in" required>
+            </div>
+          </div>
+
+          <div class="grid-2" style="gap: 1rem;">
+            <div class="form-group">
+              <label for="college-name" class="form-label">College / University Name *</label>
+              <input type="text" id="college-name" class="form-control" placeholder="e.g. Bennett University" required>
+            </div>
+            <div class="form-group">
+              <label for="team-size" class="form-label">Team Size *</label>
+              <select id="team-size" class="form-control" required>
+                <option value="2">2 Members</option>
+                <option value="3">3 Members</option>
+                <option value="4" selected>4 Members</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="primary-track" class="form-label">Preferred Challenge Track *</label>
+            <select id="primary-track" class="form-control" required>
+              <option value="ai">Track 1: Generative AI & Intelligent Systems</option>
+              <option value="web3">Track 2: Web3 & Decentralized Apps</option>
+              <option value="fintech">Track 3: FinTech & Financial Inclusion</option>
+              <option value="health">Track 4: HealthTech & Smart Wellbeing</option>
+              <option value="open">Track 5: Open Campus Innovation</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="github-link" class="form-label">Team Leader GitHub Profile (Optional)</label>
+            <input type="url" id="github-link" class="form-control" placeholder="https://github.com/username">
+            <div class="form-helper">Helps our technical mentors understand your team's background.</div>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+            Submit Free Registration →
+          </button>
+        </form>
+
+        <p style="font-size: 0.8rem; text-align: center; color: var(--text-muted); margin-top: 1.5rem;">
+          🔒 As this is an educational mock prototype, form submission operates locally in client JavaScript. No user data is stored on remote servers.
+        </p>
+      </div>
+
+      <div style="max-width: 650px; margin: 3rem auto 0 auto; text-align: center;">
+        <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">Key Registration Deadlines</h3>
+        <p style="color: var(--text-secondary); font-size: 0.95rem;">
+          Registrations Close: <strong>November 05, 2026 (11:59 PM IST)</strong><br>
+          Shortlist Announcement: <strong>November 08, 2026</strong><br>
+          Hackathon Check-in: <strong>November 14, 2026 (09:00 AM IST)</strong>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>⚡ CampusTech 2026</h4>
+          <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+            A premier 36-hour student technology hackathon prototype designed for college innovators across India. Focused on hands-on software development, AI, and ethical technology.
+          </p>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">
+            Developed by <strong>Team Digital Dominators</strong><br>
+            B.Tech CSE, Semester VII B53, Bennett University
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="overview.html">Event Overview</a></li>
+            <li><a href="schedule.html">Schedule & Timeline</a></li>
+            <li><a href="eligibility.html">Eligibility & Rules</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Event Resources</h4>
+          <ul class="footer-links">
+            <li><a href="registration.html">Registration Portal</a></li>
+            <li><a href="challenges.html">Tracks & Challenges</a></li>
+            <li><a href="venue.html">Venue & Travel Info</a></li>
+            <li><a href="faq.html">FAQs & Past Editions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Faculty & Course Mentorship</h4>
+          <p style="color: var(--text-secondary); margin-bottom: 0.8rem;">
+            Faculty Evaluator: <strong>Dr. Saumitra</strong><br>
+            Course: Mini-Project Milestone 1<br>
+            Tech Stack: Semantic HTML5, CSS3, Vanilla JS
+          </p>
+          <p>
+            <a href="https://github.com/1PratikSingh11/Campustech-2026" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: 0.4rem 0.8rem; font-size: 0.85rem;">
+              View GitHub Repository ↗
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 CampusTech Prototype. Educational project created by Team Digital Dominators (Pratik Singh, Nitin Jhajharia, Dipanshu Singh, Sumit Kumar).</p>
+        <p>This website is an academic prototype strictly for coursework demonstration. All brand names belong to their respective owners.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,7 @@
+# robots.txt for CampusTech 2026 Hackathon Prototype
+# Author: Team Digital Dominators (Dipanshu Singh)
+User-agent: *
+Allow: /
+
+# XML Sitemap Location
+Sitemap: https://1pratiksingh11.github.io/Campustech-2026/sitemap.xml
