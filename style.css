@@ -90,21 +90,6 @@ a:hover, a:focus {
 }
 
 /* Disclaimer Banner */
-.disclaimer-banner {
-  display: none !important;
-  background: linear-gradient(90deg, #312e81, #1e1b4b);
-  border-bottom: 1px solid var(--accent-primary);
-  padding: 0.5rem 1rem;
-  font-size: 0.85rem;
-  text-align: center;
-  color: #c7d2fe;
-}
-
-.disclaimer-banner strong {
-  color: #38bdf8;
-  font-weight: 700;
-}
-
 /* Header & Navigation */
 .header {
   position: sticky;
