@@ -9,7 +9,7 @@
 
 ---
 
-## 👥 Team: Digital Dominators (B.Tech CSE, Semester VII B53)
+## 👥 Team: Digital Dominators (B.Tech CSE)
 
 | Team Member | Enrollment ID | Email | Milestone 1 Contribution |
 | :--- | :--- | :--- | :--- |
