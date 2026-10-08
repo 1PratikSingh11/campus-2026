@@ -103,8 +103,7 @@ a:hover, a:focus {
 .nav-container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 2rem;
+  justify-content: space-between;
   height: 4.5rem;
 }
 
