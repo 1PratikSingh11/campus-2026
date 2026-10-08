@@ -91,6 +91,7 @@ a:hover, a:focus {
 
 /* Disclaimer Banner */
 .disclaimer-banner {
+  display: none !important;
   background: linear-gradient(90deg, #312e81, #1e1b4b);
   border-bottom: 1px solid var(--accent-primary);
   padding: 0.5rem 1rem;
