@@ -127,7 +127,6 @@ a:hover, a:focus {
   list-style: none;
   align-items: center;
   gap: 0.6rem;
-  margin-left: auto;
 }
 
 .nav-link {
