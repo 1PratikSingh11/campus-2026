@@ -5,7 +5,7 @@
 [![University](https://img.shields.io/badge/Bennett_University-B.Tech_CSE-orange?style=for-the-badge)](https://www.bennett.edu.in/)
 [![SEO](https://img.shields.io/badge/Lighthouse_SEO-100%2F100-brightgreen?style=for-the-badge)](#)
 
-> **Academic Prototype Notice:** CampusTech 2026 is an educational student project created for academic coursework and demonstration at **Bennett University** under the evaluation of **Dr. Saumitra**. All event dates, prize pools, and registration workflows are mock simulations in client state.
+> **Academic Prototype Notice:** CampusTech 2026 is an educational student project created for academic coursework and demonstration at **Bennett University** . All event dates, prize pools, and registration workflows are mock simulations in client state.
 
 ---
 
