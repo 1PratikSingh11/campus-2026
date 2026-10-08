@@ -407,19 +407,19 @@ a:hover, a:focus {
 /* Card Grids */
 .grid-3 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.75rem;
 }
 
 .grid-2 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
 .grid-4 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
 }
 
@@ -495,8 +495,7 @@ a:hover, a:focus {
 /* Schedule Timeline */
 .timeline {
   position: relative;
-  max-width: 820px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .timeline::before {
@@ -507,6 +506,24 @@ a:hover, a:focus {
   left: 20px;
   width: 2px;
   background: var(--border-color);
+}
+
+/* Two-column timeline on wide screens */
+@media (min-width: 900px) {
+  .timeline {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 2.5rem;
+    column-gap: 3rem;
+  }
+  .timeline::before { display: none; }
+  .schedule-day {
+    grid-column: 1 / -1;
+  }
+  .schedule-day + .timeline-item,
+  .schedule-day ~ .timeline-item {
+    /* inherit */
+  }
 }
 
 .timeline-item {
@@ -532,6 +549,7 @@ a:hover, a:focus {
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   padding: 1.25rem 1.5rem;
+  height: 100%;
 }
 
 .timeline-time {
@@ -588,11 +606,17 @@ a:hover, a:focus {
 
 /* Accordion (FAQ) */
 .accordion {
-  max-width: 820px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 1rem;
+}
+
+@media (min-width: 900px) {
+  .accordion {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
 }
 
 .accordion-item {
@@ -642,7 +666,8 @@ a:hover, a:focus {
 
 /* Forms */
 .form-card {
-  max-width: 650px;
+  width: 100%;
+  max-width: 860px;
   margin: 0 auto;
   background: var(--bg-card);
   border: 1px solid var(--border-color);
@@ -805,16 +830,23 @@ a:hover, a:focus {
   gap: 0.5rem;
 }
 
-/* Mobile Responsive */
+/* Tablet Responsive */
+@media (max-width: 1024px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile / Small Tablet Responsive */
 @media (max-width: 868px) {
   .hero-title {
     font-size: 2.2rem;
   }
-  
+
   .nav-toggle {
     display: block;
   }
-  
+
   .nav-menu {
     position: fixed;
     top: 4.5rem;
@@ -828,18 +860,54 @@ a:hover, a:focus {
     display: none;
     z-index: 99;
   }
-  
+
   .nav-menu.open {
     display: flex;
   }
-  
+
+  /* Collapse all grids to single column */
+  .grid-3,
+  .grid-2,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  /* Collapse timeline to single column */
+  .timeline {
+    display: block;
+  }
+  .timeline::before {
+    display: block;
+  }
+
+  /* Collapse accordion to single column */
+  .accordion {
+    grid-template-columns: 1fr;
+  }
+
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .countdown-box {
     flex-wrap: wrap;
     gap: 1rem;
+  }
+}
+
+/* Very small mobile */
+@media (max-width: 480px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .card {
+    padding: 1.25rem;
+  }
+
+  .form-card {
+    padding: 1.5rem;
   }
 }
