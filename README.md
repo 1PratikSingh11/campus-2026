@@ -14,7 +14,7 @@
 | Team Member | Enrollment ID | Email | Milestone 1 Contribution |
 | :--- | :--- | :--- | :--- |
 | **Pratik Singh** (Lead) | `E23CSEU1577` | e23cseu1577@bennett.edu.in | Target Audience Personas & 35-Keyword Intent Matrix |
-| **Nitin Jhajharia** | `E23CSEU1571` | ne23cseu1571@bennett.edu.in | 8-Page Information Architecture & Master On-Page SEO |
+| **Nitin Jhajharia** | `E23CSEU1571` | e23cseu1571@bennett.edu.in | 8-Page Information Architecture & Master On-Page SEO |
 | **Dipanshu Singh** | `E23CSEU1648` | e23cseu1648@bennett.edu.in | Responsive Web Development, Robots, Sitemap & JSON-LD Schemas |
 | **Sumit Kumar** | `E23CSEU1651` | e23cseu1651@bennett.edu.in | Competitor Baseline Audit (Devfolio), Lighthouse QA & Test Log |
 
